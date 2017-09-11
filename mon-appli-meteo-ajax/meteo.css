@@ -1,0 +1,58 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-size: 3.2rem;
+}
+
+button {
+	background-color: navy;
+	border: 2px solid blue;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+header, main {
+	width: 25%;
+	margin: 0 auto;
+}
+
+header {
+	margin-top: 5rem;
+}
+
+form {
+	margin: 0 auto;
+	text-align: center;
+}
+
+input, button {
+	padding: 0.8rem 2%;
+}
+
+#meteo {
+	text-align: center;
+	margin-top: 3rem;
+}
+
+#temps i {
+	font-size: 5rem;
+}
+
+#temperature {
+	margin-top: 3rem;
+	font-size: 2rem;
+}
+
+.error {
+	border: 2px solid red;
+}
+
+.hidden {
+	display: none;
+}

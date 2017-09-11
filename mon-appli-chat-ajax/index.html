@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css" type="text/css" />
+        <title>Talk2Me</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Talk2Me</h1>
+        </header>
+        
+        <main>
+            
+            <div id="messages"></div>
+            
+            <form method="post" action="./chat.php?task=ecrire">
+                <input type="text" name="author" id="author" placeholder="Mon nom" value="Audrey">
+                <textarea name="content" id="content" placeholder="Ecrire un message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+            
+        </main>
+        
+        <script type="text/javascript" src="./main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    background-color: #87CEEB;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    padding: 1rem 5%;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+form {
+    margin-top: 1.5rem;
+    border-top: 0.08rem solid #87CEEB;
+    padding-top: 2rem;
+}
+
+input, textarea {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.5rem 2%;
+    border-radius: 0.5rem;
+}
+
+input {
+    width: 8%;
+    border: 0.05rem solid #87CEEB;
+}
+
+textarea {
+    width: 65%;
+    border-color: #87CEEB;
+}
+
+button {
+    padding: 0.5rem;
+    margin-left: 2%;
+    display: inline-block;
+    width: 10%;
+    background-color: #87CEEB;
+    color: white;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
