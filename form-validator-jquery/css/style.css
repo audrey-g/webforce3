@@ -1,0 +1,14 @@
+input, select {
+	width:300px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.error {
+	border: 1px solid red;
+	color: red;
+}
+
+.erreur-msg {
+	display: none;
+}
