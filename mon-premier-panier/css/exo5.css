@@ -1,0 +1,49 @@
+main {
+	overflow: hidden;
+}
+
+section {
+	width: 80%;
+	margin: 0 auto;
+	float: left;
+}
+
+
+figure {
+	text-align: center;
+	display: inline-block;
+	width: 10%;
+	vertical-align: top;
+}
+
+img {
+	width: 100%;
+}
+
+aside {
+	width: 15%;
+	float: right;
+	border-left: 2% solid black;
+}
+
+form {
+	display: inline-block;
+	width: 10%;
+}
+
+input[type="text"]{
+	width: 100%;
+	text-align: center;
+}
+
+button {
+	display: inline-block;
+}
+
+table {
+	margin: 0 auto;
+}
+
+table img {
+	width: 15%;
+}
