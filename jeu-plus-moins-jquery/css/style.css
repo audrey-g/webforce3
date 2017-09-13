@@ -1,0 +1,32 @@
+.container {
+	width: 40%;
+	margin: 10rem auto;
+}
+
+.hidden {
+	display: none;
+}
+
+body {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	font-family: 'Fredoka One', cursive;
+	margin-bottom: 2rem;
+}
+
+form {
+	margin: 2rem 0;
+}
+
+input, button {
+	padding: 0.5rem 2%;
+	border: 0.1rem solid grey;
+	border-radius: 0.5rem;
+}
+
+input[placeholder]{
+	font-family: 'Raleway', sans-serif;
+}
