@@ -2,15 +2,24 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<link rel="icon" href="./img/favicon.ico">
 	<script src="https://use.fontawesome.com/7cdd8d895b.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./tinder.css">
+	<link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/tinder.css">
 	<title>Tinder du pauvre</title>
 </head>
 <body>
 
-	<h1>Le champion du jour !</h1>
+	<h1>Fais ton choix !</h1>
+
+	<form class="hidden">
+		<p> Tu es intéressé(e) par ...</p>
+		<label for="sex-choice"><i class="fa fa-mars" aria-hidden="true"></i><input type="radio" name="sex-choice" value="male"></label>
+		<label for="sex-choice"><i class="fa fa-venus" aria-hidden="true"></i><input type="radio" name="sex-choice" value="female"></label>
+		<label for="sex-choice"><i class="fa fa-venus-mars" aria-hidden="true"></i><input type="radio" name="sex-choice" value="all" selected></label>
+	</form>
 
 	<section>
 
@@ -24,23 +33,34 @@
 
 				<p>Nom : 	<span id="name">Lorem ipsum</span></p>
 				<p>Age : 	<span id="age">26 ans</span></p>
-				<p>Email : 	<span id="email">test@email.com</span></p>
+				<!-- <p>Email : 	<span id="email">test@email.com</span></p> -->
 				<p>Genre : 	<span id="gender"><i class="fa fa-female" aria-hidden="true"></i></span></p>
 				
+			</div>
+
+			<div>
+				<a id="email" href="mailto:69test@email.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 			</div>
 			
 		</article>
 
-		<hr></hr>
-
 		<div class="btn">
-			<button id="dislike">J'aime pas !</button>
-			<button id="like"> J'aime !</button>
+			<button id="dislike-btn" class="dislike"><i class="dislike fa fa-thumbs-o-down" aria-hidden="true"></i></button>
+			<button id="like-btn" class="like"><i class="like fa fa-thumbs-o-up" aria-hidden="true"></i></button>
 		</div>
 
 	</section>
 
+	<article>
+		<div id="dislike-list">
+			<h3>J'ai pas aimé</h3>
+		</div>
+		<div id="like-list">
+			<h3>J'ai aimé</h3>
+		</div>
+	</article>
 
-	<script src="./tinder.js"></script>
+
+	<script src="./js/tinder.js"></script>
 </body>
 </html>

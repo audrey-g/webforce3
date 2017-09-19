@@ -5,8 +5,8 @@ const email = document.getElementById('email');
 const gender = document.getElementById('gender');
 
 
-document.getElementById('like').addEventListener("click", callUser);
-document.getElementById('dislike').addEventListener("click", callUser);
+document.getElementById('like-btn').addEventListener("click", clicLike);
+document.getElementById('dislike-btn').addEventListener("click", clicLike);
 
 /* ou 
 document.querySelectorAll('button').forEach(function(button){
@@ -22,9 +22,8 @@ function callUser(){
 		var result = JSON.parse(request.responseText);
 		
 		image.src = result.results[0].picture.large;
-		name.innerText = capitalize(result.results[0].name.title) + " " + capitalize(result.results[0].name.first) + " " + capitalize(result.results[0].name.last);
-		email.innerText = result.results[0].email;
-
+		name.innerText = capitalize(result.results[0].name.first) + " " + capitalize(result.results[0].name.last);
+		email.href= "mailto:"+result.results[0].email;
 		var gen = result.results[0].gender;
 
 		if (gen == "female"){
@@ -52,6 +51,28 @@ function capitalize (str){
 	str = str.replace(str[0], firstLetterMaj);
 
 	return str;	
+}
+
+function clicLike (e){
+
+	callUser();
+
+	var userDiv = document.createElement('figure');
+	userDiv.innerHTML = '<img src="'+image.src+'" alt="User pic"><figcaption>'+name.innerText+'</figcaption>';
+
+	// Débuggage
+	// Attention, si clic sur l'icône, l'id du bouton n'est pas pris !!!
+	console.log(event);
+	console.log(event.target.classList[0]);
+
+	var btn = event.target.classList[0];
+
+	if (btn == "like"){
+		document.getElementById('like-list').appendChild(userDiv);
+	} else if (btn == "dislike"){
+		document.getElementById('dislike-list').appendChild(userDiv);
+	}
+
 }
 
 callUser();
